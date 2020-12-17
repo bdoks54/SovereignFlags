@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/flagimage"
+        android:src="@drawable/kr"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/flagshortname"/>
+
+    <TextView
+        android:id="@+id/flagkorname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dip"
+        android:paddingTop="5dip"
+        android:text="flagkorname"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="4dip"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/flagimage"
+        />
+
+    <TextView
+        android:id="@+id/flagname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dip"
+        android:paddingTop="0dip"
+        android:layout_marginLeft="4dip"
+        android:text="flagname"
+        android:layout_below="@+id/flagkorname"
+        android:layout_toEndOf="@+id/flagimage"
+        />
+
+    <TextView
+        android:id="@+id/flagshortname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="flagshortname"
+        android:gravity="left"
+        android:layout_marginLeft="4dip"
+        android:paddingBottom="5dip"
+        android:paddingTop="0dip"
+        android:layout_below="@+id/flagname"
+        android:layout_toEndOf="@+id/flagimage"
+        android:textSize="8dp"
+        />
+
+    <TextView
+        android:id="@+id/flagcode"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="flagcode"
+        android:layout_below="@+id/flagkorname"
+        android:layout_alignEnd="@+id/flagkorname"
+        />
+
+</RelativeLayout>
